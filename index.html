@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Your Resume</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media print {
+    body {
+        width: 21cm;
+        height: 29.7cm;
+        margin: 30mm 20mm 30mm 20mm;
+    }
+
+}
+
+        .a4-container {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto; /* Center the container on the page */
+            border: 1px solid #e0dede; /* Add a border for visualization */
+            position: relative;
+        }
+
+        .rectangular-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 210mm; /* Adjust the width based on your design */
+            height: 60mm; /* Adjust the height based on your design */
+            background-color: #f6dfdf; /* Set the background color */
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            top: 28%;
+            right: 50%;
+            width: 1px;
+            height: 65%;
+            background-color: #f5cece; /* Color of the vertical line */
+            transform: translateX(50%); /* Center the line horizontally */
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 25%;
+            width: 100%;
+            height: 1px;
+            background-color: #f5cece; /* Color of the horizontal line */
+            left: 0;
+            transform: translateY(-50%); /* Center the line vertically */
+        }
+        
+        
+
+        .line-container {
+            position: absolute;
+            width: 100%;
+            margin-top: 20px; 
+            /* Adjust the margin based on your design */
+        }
+
+        .line {
+            position: absolute;
+            width: 30%;
+            height: 1px;
+            background-color: #f5cece; /* Color of the horizontal line */
+            left: 55%;
+            right: 10;
+            transform: translateY(-50%);
+            margin: 700px 0; /* Center the line vertically */
+        }
+
+        .line-1 {
+            top: 30%; /* Adjust the top position for the first line */
+            width: 30%; /* Adjust the width for the first line */
+            left:55%;
+        }
+
+        .line-2 {
+            top: 600%; /* Adjust the top position for the second line */
+            width: 30%;
+            left: 55% /* Adjust the width for the second line */
+        }
+
+        .line-3 {
+            top: 30%; /* Adjust the top position for the third line */
+            width: 30%;
+            left: 13.5%; /* Adjust the width for the third line */
+            
+        }
+
+        .line-4{
+            top: -1000%; /* Adjust the top position for the third line */
+            bottom: 180%;
+            width: 30%;
+            left: 13.5%; /* Adjust the width for the third line */    
+        }
+
+        .line-5{
+            top: -2000%; /* Adjust the top position for the third line */
+            bottom: 180%;
+            width: 30%;
+            left: 13.5%;
+        }
+
+        .line-6 {
+            top: -2000%; /* Adjust the top position for the first line */
+            width: 30%; /* Adjust the width for the first line */
+            left:55%;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        .circle img {
+            width: 100%; /* Make the image fill the circle */
+            height: auto; /* Maintain the image's aspect ratio */
+            display: block; /* Remove any extra spacing below the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="a4-container">
+    <div class="rectangular-container">
+    <center>
+    <header>
+        <br>
+        <div class="circle">
+           <img src="image.jpg" alt="Your Image">
+        </div> 
+        <h1>Duggirala Pavithra</h1>
+    </header>
+    </center>
+    </div>
+    
+    <div class="container"></div>
+    
+    <div class="line-container">
+
+    <div class="line line-1">
+        <h3>Languages</h3>
+        <p>English, Telugu, Basic Hindi and French</p>
+    </div>
+
+    <div class="line line-2">
+        <h3>Contact</h3>
+        <p>Mobile No:9618555243</p>
+        <p>Mail Id: duggiralapavithra
+            2004@email.com</p>
+        <p>Address: Guntur,522503</p>
+    </div>
+    .
+    <div class="line line-3">
+     <h3>Experience</h3>
+     <p>I have participated in a Makeathon competition.
+        <br><br>I have done some ECS projects. So I have an idea about the hardware connections.
+        <br><br>Have experience in making PPTs.
+        <br><br>Can use AI and some online tools to make work easy.</p>
+    </div>
+    
+    <div class="line line-4">
+        <h3>Skills</h3>
+        <p>Creativity<br>
+         Communication Skills<br>
+         Time Management<br>
+         Team Work<br>
+         Planning
+        </p>
+    </div>
+
+    <div class="line line-5">
+        <h3>Coding</h3>
+        <p>Python<br>
+            SQL<br>
+            Java<br>
+            HTML<br>
+            CSS</p>
+    </div>
+    
+    <div class="line line-6">
+        <h3>Education</h3>
+        <p>
+            SSC<br>
+            9.7<br>
+            Golden Rule high school, Mandadam<br><br>
+
+            Intermediate<br>
+            96.2<br>
+            Sarada, Vijayawada<br><br>
+
+            Integrated MTech In  Computer Science Engineering<br>
+            8.8<br>
+            VITAP, Amaravati
+        </p>
+    </div>
+    
+    </div>
+    
+    
+</div>
+</body>
+</html>
